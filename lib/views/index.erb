@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1> Bienvenue sur "TGP = The Gossip Project"</h1>
+    <p> Tu as quelques potins à nous faire part ? </p>
+    <a href="/gossips/new/">Créer un nouveau potin 
+    ici ! </a>
+    <% gossips.each do |gossip| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %>
+        </p>
+      <% end %>
+  </body>
+</html>
